@@ -23,7 +23,7 @@ public class DataLoad {
             // Creation of groups
             Group groupOne = new Group("1", 35);
             Group groupTwo = new Group("2", 50);
-            Group groupThree = new Group("2", 42);
+            Group groupThree = new Group("3", 42);
 
             // Creation of subjects
             Subject networks = new Subject("redes de computadoras", "RAC-232", Semester.SEVEN);
