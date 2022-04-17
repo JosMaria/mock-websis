@@ -25,11 +25,21 @@ public class Subject {
     private Semester semester;
 
     @ManyToMany(mappedBy = "subjects")
-    private Set<Teacher> teachers = new HashSet<>();
+    private final Set<Teacher> teachers = new HashSet<>();
+
+    @ManyToMany
+    @JoinTable( name = "subjects_groups",
+                joinColumns = @JoinColumn(name = "subject_id"),
+                inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<Group> groups = new HashSet<>();
 
     public Subject(String name, String code, Semester semester) {
         this.name = name;
         this.code = code;
         this.semester = semester;
+    }
+
+    public void addGroup(Group group) {
+        groups.add(group);
     }
 }

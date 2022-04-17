@@ -1,6 +1,5 @@
 package org.genesiscode.mockwebsis.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
