@@ -3,6 +3,8 @@ package org.genesiscode.mockwebsis.entity;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @NoArgsConstructor
 @Entity
@@ -21,6 +23,9 @@ public class Subject {
 
     @Enumerated(value = EnumType.STRING)
     private Semester semester;
+
+    @ManyToMany(mappedBy = "subjects")
+    private Set<Teacher> teachers = new HashSet<>();
 
     public Subject(String name, String code, Semester semester) {
         this.name = name;

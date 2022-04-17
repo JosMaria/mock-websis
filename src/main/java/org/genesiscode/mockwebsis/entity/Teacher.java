@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @NoArgsConstructor
 @Entity
@@ -22,10 +24,20 @@ public class Teacher {
     private String email;
     private String password;
 
+    @ManyToMany
+    @JoinTable( name = "teachers_subjects",
+                joinColumns = @JoinColumn(name = "teacher_id"),
+                inverseJoinColumns = @JoinColumn(name = "subject_id"))
+    private Set<Subject> subjects = new HashSet<>();
+
     public Teacher(String name, String lastName, String email, String password) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+    }
+
+    public void addSubject(Subject subject) {
+        subjects.add(subject);
     }
 }
