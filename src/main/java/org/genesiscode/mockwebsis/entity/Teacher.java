@@ -1,11 +1,13 @@
 package org.genesiscode.mockwebsis.entity;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Getter
 @NoArgsConstructor
 @Entity
 @Table(name = "teachers")
@@ -23,7 +25,7 @@ public class Teacher {
     private String email;
     private String password;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable( name = "teachers_subjects",
                 joinColumns = @JoinColumn(name = "teacher_id"),
                 inverseJoinColumns = @JoinColumn(name = "subject_id"))

@@ -1,11 +1,13 @@
 package org.genesiscode.mockwebsis.entity;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Getter
 @NoArgsConstructor
 @Entity
 @Table(name = "subjects")
@@ -24,10 +26,11 @@ public class Subject {
     @Enumerated(value = EnumType.STRING)
     private Semester semester;
 
+    @Transient
     @ManyToMany(mappedBy = "subjects")
     private final Set<Teacher> teachers = new HashSet<>();
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable( name = "subjects_groups",
                 joinColumns = @JoinColumn(name = "subject_id"),
                 inverseJoinColumns = @JoinColumn(name = "group_id"))

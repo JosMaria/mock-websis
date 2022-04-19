@@ -1,14 +1,13 @@
 package org.genesiscode.mockwebsis.entity;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Getter
 @NoArgsConstructor
 @Entity
 @Table(name = "groups")
@@ -19,6 +18,7 @@ public class Group {
 
     private Integer numberOfStudent;
 
+    @Transient
     @ManyToMany(mappedBy = "groups")
     private Set<Subject> subjects = new HashSet<>();
 

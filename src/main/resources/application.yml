@@ -14,3 +14,9 @@ spring:
       path: /h2
   datasource:
     url: jdbc:h2:mem:mockwebsis
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
