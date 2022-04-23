@@ -18,10 +18,6 @@ public class Group {
 
     private Integer numberOfStudent;
 
-    @Transient
-    @ManyToMany(mappedBy = "groups")
-    private Set<Subject> subjects = new HashSet<>();
-
     public Group(String id, Integer numberOfStudent) {
         this.id = id;
         this.numberOfStudent = numberOfStudent;
