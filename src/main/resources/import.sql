@@ -8,38 +8,26 @@ INSERT INTO teachers (id, name, last_name, email, password) VALUES (6, 'JORGE WA
 INSERT INTO teachers (id, name, last_name, email, password) VALUES (7, 'JUAN RUBEN', 'GARCIA MOLINA', 'juanruben@gmail.com', 'juan17');
 INSERT INTO teachers (id, name, last_name, email, password) VALUES (8, 'EMIR FELIX', 'VARGAS PEREDO', 'emirfelix@gmail.com', 'emir17');
 INSERT INTO teachers (id, name, last_name, email, password) VALUES (9, 'YONY RICHARD', 'MONTOYA BURGOS', 'yonyrichard@gmail.com', 'yony17');
-
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
---  (5, 'ERIKA PATRICIA', 'RODRIGUEZ BILBAO', 'erikapatricia@gmail.com', 'erika17'),
-
---     FLORES VILLARROEL CORINA
---     BLANCO COCA LETICIA
---     ESCALERA FERNANDEZ DAVID
---     MONTECINOS CHOQUE MARCO ANTONIO
---     ACHA PEREZ SAMUEL
---     VARGAS ANTEZANA ADEMAR MARCELO
---     GRILO SALVATIERRA MARIA ESTELA
---     ROMERO RODRIGUEZ PATRICIA
---     VILLARROEL NOVILLO JIMMY
---     AYOROA CARDOZO JOSE RICHARD
---     JALDIN ROSALES K. ROLANDO
---     FIORILO LOZADA AMERICO
---     ANTEZANA CAMACHO MARCELO
---     GUZMAN ORELLANA GONZALO ENRIQUE
---     MONTANO QUIROGA VICTOR HUGO
---     COSTAS JAUREGUI VLADIMIR ABEL
---     CALANCHA NAVIA BORIS
---     QUIROZ CHAVEZ ABDON
---     ARANIBAR LA FUENTE LIGIA
---     CHOQUE FLORES ALEX D'ANCHGELO
--- LIMA VACAFLOR TITO ANIBAL
--- MEJIA URQUIETA VICTOR RAMIRO
--- COSIO PAPADOPOLIS CARLOS JAVIER
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (10, 'CORINA', 'FLORES VILLARROEL', 'corina@gmail.com', 'corina17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (11, 'LETICIA', 'BLANCO COCA', 'leticia@gmail.com', 'leticia');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (12, 'DAVID', 'ESCALERA FERNANDEZ', 'david@gmail.com', 'david17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (13, 'MARCO ANTONIO', 'MONTECINOS CHOQUE', 'marcoantonio@gmail.com', 'marco17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (14, 'SAMUEL', 'ACHA PEREZ', 'samuel@gmail.com', 'samuel17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (15, 'ADEMAR MARCELO', 'VARGAS ANTEZANA', 'ademarmarcelo@gmail.com', 'ademar17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (16, 'MARIA ESTELA', 'GRILO SALVATIERRA', 'mariaestela@gmail.com', 'maria17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (17, 'PATRICIA', 'ROMERO RODRIGUEZ', 'patricia@gmail.com', 'patricia17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (18, 'JIMMY', 'VILLARROEL NOVILLO', 'jimmy@gmail.com', 'jimmy17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (19, 'JOSE RICHARD', 'AYOROA CARDOZO', 'joserichard@gmail.com', 'jose17');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (20, 'K. ROLANDO', 'JALDIN ROSALES', 'rolandojaldin@gmail.com', 'rolando23');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (21, 'AMERICO', 'FIORILO LOZADA', 'americofiorilo@gmail.com', 'americo66');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (22, 'MARCELO', 'ANTEZANA CAMACHO', 'marceloantezana@gmail.com', 'marcelo25');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (23, 'GONZALO ENRIQUE', 'GUZMAN ORELLANA', 'gonzaloguzman@gmail.com', 'gonzalo75');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (24, 'VICTOR HUGO', 'MONTANO QUIROGA', 'victormontano@gmail.com', 'victor53');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (25, 'VLADIMIR ABEL', 'COSTAS JAUREGUI', 'costasvladimir@gmail.com', 'vladimir27');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (26, 'BORIS', 'CALANCHA NAVIA', 'boriscalancha@gmail.com', 'boris71');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (27, 'ABDON', 'QUIROZ CHAVEZ', 'abdonquiroz@gmail.com', 'abdon29');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (28, 'LIGIA', 'LIGIA', 'ligia@gmail.com', 'ligia97');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (29, 'ALEX D_ANCHGELO', 'CHOQUE FLORES', 'alexchoque@gmail.com', 'alex45');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (30, 'TITO ANIBAL', 'LIMA VACAFLOR', 'titolima@gmail.com', 'tito55');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (31, 'VICTOR RAMIRO', 'MEJIA URQUIETA', 'victormejia@gmail.com', 'victor89');
+INSERT INTO teachers (id, name, last_name, email, password) VALUES (32, 'CARLOS JAVIER', 'COSIO PAPADOPOLIS', 'carloscosio@gmail.com', 'carlos38');
