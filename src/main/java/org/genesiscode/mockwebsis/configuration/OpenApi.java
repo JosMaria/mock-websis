@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("classpath:api-info.properties")
+@PropertySource("classpath:app.properties")
 public class OpenApi {
 
     @Value("${app.info.contact.name}")
