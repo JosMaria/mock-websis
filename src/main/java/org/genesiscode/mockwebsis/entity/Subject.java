@@ -26,15 +26,11 @@ public class Subject {
     @Enumerated(value = EnumType.STRING)
     private Semester semester;
 
-    @Transient
-    @ManyToMany(mappedBy = "subjects")
-    private final Set<Teacher> teachers = new HashSet<>();
-
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable( name = "subjects_groups",
                 joinColumns = @JoinColumn(name = "subject_id"),
                 inverseJoinColumns = @JoinColumn(name = "group_id"))
-    private Set<Group> groups = new HashSet<>();
+    private final Set<Group> groups = new HashSet<>();
 
     public Subject(String name, String code, Semester semester) {
         this.name = name;

@@ -23,13 +23,14 @@ public class Teacher {
 
     @Column(unique = true)
     private String email;
+
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable( name = "teachers_subjects",
                 joinColumns = @JoinColumn(name = "teacher_id"),
                 inverseJoinColumns = @JoinColumn(name = "subject_id"))
-    private Set<Subject> subjects = new HashSet<>();
+    private final Set<Subject> subjects = new HashSet<>();
 
     public Teacher(String name, String lastName, String email, String password) {
         this.name = name;
