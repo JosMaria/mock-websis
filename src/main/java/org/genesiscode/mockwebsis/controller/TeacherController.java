@@ -13,4 +13,6 @@ public interface TeacherController {
     ResponseEntity<List<Teacher>> getAllTeacher(
             @Parameter(name = "pagina", required = true, example = "2") int page,
             @Parameter(name = "tamaño", required = true, example = "10") int size);
+
+    ResponseEntity<Teacher> findByEmail(String email);
 }

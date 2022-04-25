@@ -22,4 +22,11 @@ public class TeacherServiceImpl implements TeacherService {
         Page<Teacher> pagedResult = teacherRepository.findAll(paging);
         return pagedResult.toList();
     }
+
+    @Override
+    public Teacher findByEmail(String email) {
+        return teacherRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException(
+                        String.format("Teacher with email %s does not exists.", email)));
+    }
 }
