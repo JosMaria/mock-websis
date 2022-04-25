@@ -27,4 +27,10 @@ public class TeacherControllerImpl implements TeacherController {
         List<Teacher> allTeacher = teacherService.getAllTeacher(page, size);
         return new ResponseEntity<>(allTeacher, HttpStatus.OK);
     }
+
+    @GetMapping("email")
+    @Override
+    public ResponseEntity<Teacher> findByEmail(@RequestParam("email") String email) {
+        return ResponseEntity.ok(teacherService.findByEmail(email));
+    }
 }
