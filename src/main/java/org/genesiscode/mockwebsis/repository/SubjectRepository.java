@@ -1,4 +1,4 @@
-package org.genesiscode.mockwebsis.Repository;
+package org.genesiscode.mockwebsis.repository;
 
 import org.genesiscode.mockwebsis.entity.Subject;
 import org.springframework.data.jpa.repository.JpaRepository;
